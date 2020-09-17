@@ -34,7 +34,7 @@
 ?>
 !</h2>
 
- 
+<a class="pull-right btn btn-warning btn-large" style="margin-right:40px" href="<?php echo site_url(); ?>/exportexcel/generateXls"><i class="fa fa-file-excel-o"></i> Export to Excel</a>
 
 </body>
 <html>

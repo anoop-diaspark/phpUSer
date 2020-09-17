@@ -80,6 +80,24 @@
         </div> 
         <div class="col-lg-4"></div>    
     </div>
+    <a class="pull-right btn btn-warning btn-large" style="margin-right:40px" href="<?php echo site_url(); ?>/exportexcel/generateXls"><i class="fa fa-file-excel-o"></i> Export to Excel</a>
+<h2><?php echo date("n"); ?></h2>
+<h2><?php echo date("M-j"); ?></h2>
+<?php 
+
+$arr = array();
+for($i=1;$i<5;$i++){
+   $a = array("key"=>$i,"key1"=>$i+1);
+   array_push($arr,$a);
+}
+
+
+foreach( $arr as $a){
+    echo $a["key"];
+    echo $a["key1"];
+}
+
+?>
     <!-- validation plugin configuration -->
     <script type="text/javascript">
         // wait untill the page is loaded completely

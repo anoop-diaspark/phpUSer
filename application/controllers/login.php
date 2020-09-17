@@ -13,7 +13,7 @@ class Login extends CI_Controller {
                     redirect('dashboard');
                 }
                 $this->load->model('login_model');
-         
+                $this->login_model->get_sub();
         }
         public function index()
         {
